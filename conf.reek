@@ -1,0 +1,13 @@
+"app/controllers":
+  IrresponsibleModule:
+    enabled: false
+  UnusedPrivateMethod:
+    enabled: false
+  InstanceVariableAssumption:
+    enabled: false
+"app/facades":
+  IrresponsibleModule:
+    enabled: false
+"app/models/core":
+  Attribute:
+    enabled: false
