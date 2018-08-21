@@ -39,3 +39,5 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 Rails/HasManyOrHasOneDependent:
   Enabled: false
+Rails/SkipsModelValidations:
+  Enabled: false
