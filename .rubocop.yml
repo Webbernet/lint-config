@@ -9,6 +9,7 @@ AllCops:
     - 'spec/spec_helper.rb'
     - 'vendor/**/*'
     - 'lib/tasks/**/*'
+    - 'bin/*'
 
 Rails:
   Enabled: true
