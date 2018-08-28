@@ -13,3 +13,6 @@ DuplicateMethodCall:
 "app/models/core":
   Attribute:
     enabled: false
+"app/forms":
+  IrresponsibleModule:
+    enabled: false
