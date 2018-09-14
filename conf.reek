@@ -1,6 +1,6 @@
 DuplicateMethodCall:
   max_calls: 3
-"app/controllers":
+"app/controllers/**":
   IrresponsibleModule:
     enabled: false
   UnusedPrivateMethod:
@@ -10,9 +10,6 @@ DuplicateMethodCall:
 "app/facades/**":
   IrresponsibleModule:
     enabled: false
-"app/models/core":
-  Attribute:
-    enabled: false
-"app/forms":
+"app/forms/**":
   IrresponsibleModule:
     enabled: false
