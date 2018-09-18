@@ -57,7 +57,7 @@ plugins:
             - "**/*.rb"
         no-render-screenshots:
           pattern: render_screenshot
-          annotation: "Don't use render screenshots"
+          annotation: "Don't forget to remove render screenshots :P"
           severity: major
           path_patterns:
             - "**/*.rb"
