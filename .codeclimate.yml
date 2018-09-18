@@ -69,7 +69,7 @@ plugins:
             - "**/*.vue"
             - "**/*.js"
             - "**/*.erb"
-         no-js-debugger:
+        no-js-debugger:
           pattern: debugger
           annotation: "Remove debugger statements"
           severity: major
