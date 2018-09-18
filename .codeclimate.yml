@@ -49,22 +49,16 @@ plugins:
     enabled: true
     config:
       patterns:
-        no-set-methods:
+        no-byebugs:
           pattern: byebug
           annotation: "Make sure you take out your byebugs!"
           severity: major
-          categories: Bug Risk
-          content: >
-            You know
           path_patterns:
             - "**/*.rb"
-        no-set-methods:
+        no-render-screenshots:
           pattern: render_screenshot
           annotation: 'Don't use render screenshots'
           severity: major
-          categories: Bug Risk
-          content: >
-            We don't want render screenshots in our code
           path_patterns:
             - "**/*.rb"
   duplication:
