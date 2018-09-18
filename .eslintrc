@@ -8,7 +8,7 @@
         }
     },
     "rules": {
-        "semi": 2,
+        "semi": "always",
         "eqeqeq": "smart"
     }
 }
