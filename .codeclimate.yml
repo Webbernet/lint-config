@@ -39,6 +39,7 @@ plugins:
     enabled: true
     channel: "eslint-4"
     config:
+      config: ".eslintrc.json"
       extensions:
       - .es6
       - .js
