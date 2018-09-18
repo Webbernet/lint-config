@@ -49,18 +49,18 @@ plugins:
     enabled: true
     config:
       patterns:
-        - no-byebugs:
-            pattern: byebug
-            annotation: "Make sure you take out your byebugs!"
-            severity: major
-            path_patterns:
-              - "**/*.rb"
-        - no-render-screenshots:
-            pattern: render_screenshot
-            annotation: 'Don't use render screenshots'
-            severity: major
-            path_patterns:
-              - "**/*.rb"
+        no-byebugs:
+          pattern: byebug
+          annotation: "Make sure you take out your byebugs!"
+          severity: major
+          path_patterns:
+            - "**/*.rb"
+        no-render-screenshots:
+          pattern: render_screenshot
+          annotation: "Don't use render screenshots"
+          severity: major
+          path_patterns:
+            - "**/*.rb"
   duplication:
     enabled: true
     exclude_patterns:
