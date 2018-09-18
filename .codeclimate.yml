@@ -58,6 +58,15 @@ plugins:
             You know
           path_patterns:
             - "**/*.rb"
+        no-set-methods:
+          pattern: render_screenshot
+          annotation: 'Don't use render screenshots'
+          severity: major
+          categories: Bug Risk
+          content: >
+            We don't want render screenshots in our code
+          path_patterns:
+            - "**/*.rb"
   duplication:
     enabled: true
     exclude_patterns:
