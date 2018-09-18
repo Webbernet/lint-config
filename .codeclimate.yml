@@ -1,0 +1,64 @@
+version: "2"
+prepare:
+  fetch:
+  - url: "https://raw.githubusercontent.com/Webbernet/lint-config/master/.rubocop.yml"
+    path: ".rubocop.yml"
+  fetch:
+  - url: "https://raw.githubusercontent.com/Webbernet/lint-config/master/conf.reek"
+    path: "conf.reek"
+checks:
+  argument-count:
+    enabled: true
+  complex-logic:
+    enabled: true
+  file-lines:
+    enabled: true
+  method-complexity:
+    enabled: true
+  method-count:
+    enabled: true
+  method-lines:
+    enabled: true
+  nested-control-flow:
+    enabled: true
+  return-statements:
+    enabled: true
+  identical-code:
+    enabled: true
+  similar-code:
+    enabled: true
+engines:
+  rubocop:
+    enabled: true
+  brakeman:
+    enabled: true
+  eslint:
+    enabled: true
+  reek:
+    enabled: true
+  flog:
+    enabled: true
+  scss-lint:
+    enabled: true
+  stylelint:
+    enabled: true
+  duplication:
+    enabled: true
+    exclude_patterns:
+    - "app/facades/"
+    - "app/controllers/"
+ratings:
+  paths:
+  - app/**
+  - lib/**
+  - "**.rb"
+  - "**.go"
+  - "**.scss"
+  - "**.js"
+exclude_paths:
+- spec/**/*
+- db/
+- config/
+- dist/
+- "**/vendor/**/*"
+- app/src/timesheet_pdf/**/*
