@@ -61,6 +61,12 @@ plugins:
           severity: major
           path_patterns:
             - "**/*.rb"
+        no-send:
+          pattern: .send(
+          annotation: "We try not use send at Webbernet. There is another way!"
+          severity: major
+          path_patterns:
+            - "**/*.rb"
   duplication:
     enabled: true
     exclude_patterns:
