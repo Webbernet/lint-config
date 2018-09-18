@@ -6,6 +6,9 @@ prepare:
   fetch:
   - url: "https://raw.githubusercontent.com/Webbernet/lint-config/master/conf.reek"
     path: "conf.reek"
+  fetch:
+  - url: "https://raw.githubusercontent.com/Webbernet/lint-config/master/.eslintrc"
+    path: ".eslintrc"
 checks:
   argument-count:
     enabled: true
@@ -27,7 +30,7 @@ checks:
     enabled: true
   similar-code:
     enabled: true
-engines:
+plugins:
   rubocop:
     enabled: true
   brakeman:
@@ -42,20 +45,25 @@ engines:
     enabled: true
   stylelint:
     enabled: true
+  grep:
+    enabled: true
+    config:
+      patterns:
+        no-set-methods:
+          pattern: byebug
+          annotation: "Make sure you take out your byebugs!"
+          severity: major
+          categories: Bug Risk
+          content: >
+            You know
+          path_patterns:
+            - "**/*.rb"
   duplication:
     enabled: true
     exclude_patterns:
     - "app/facades/"
     - "app/controllers/"
-ratings:
-  paths:
-  - app/**
-  - lib/**
-  - "**.rb"
-  - "**.go"
-  - "**.scss"
-  - "**.js"
-exclude_paths:
+exclude_patterns:
 - spec/**/*
 - db/
 - config/
