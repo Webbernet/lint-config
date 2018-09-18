@@ -37,6 +37,15 @@ plugins:
     enabled: true
   eslint:
     enabled: true
+    channel: "eslint-4"
+    config:
+      extensions:
+      - .es6
+      - .js
+      - .jsx
+      - .vue
+      - .html
+      - .erb
   reek:
     enabled: true
   flog:
