@@ -62,7 +62,7 @@ plugins:
           path_patterns:
             - "**/*.rb"
         no-js-console-log:
-          pattern: console.log
+          pattern: console
           annotation: "Remove console.log debugging statements"
           severity: major
           path_patterns:
