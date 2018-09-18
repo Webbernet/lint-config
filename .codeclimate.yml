@@ -61,22 +61,6 @@ plugins:
           severity: major
           path_patterns:
             - "**/*.rb"
-        no-js-console-log:
-          pattern: console
-          annotation: "Remove console.log debugging statements"
-          severity: major
-          path_patterns:
-            - "**/*.vue"
-            - "**/*.js"
-            - "**/*.erb"
-        no-js-debugger:
-          pattern: debugger
-          annotation: "Remove debugger statements"
-          severity: major
-          path_patterns:
-            - "**/*.vue"
-            - "**/*.js"
-            - "**/*.erb"
         no-send:
           pattern: .send(
           annotation: "We try not use send at Webbernet. There is another way!"
