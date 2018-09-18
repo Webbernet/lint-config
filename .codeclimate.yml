@@ -7,8 +7,8 @@ prepare:
   - url: "https://raw.githubusercontent.com/Webbernet/lint-config/master/conf.reek"
     path: "conf.reek"
   fetch:
-  - url: "https://raw.githubusercontent.com/Webbernet/lint-config/master/.eslintrc"
-    path: ".eslintrc"
+  - url: "https://raw.githubusercontent.com/Webbernet/lint-config/master/.eslintrc.json"
+    path: ".eslintrc.json"
 checks:
   argument-count:
     enabled: true
