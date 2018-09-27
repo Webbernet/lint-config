@@ -7,7 +7,7 @@ DuplicateMethodCall:
     enabled: false
   InstanceVariableAssumption:
     enabled: false
-"app/facades/**":
+"app/facades/**/**":
   IrresponsibleModule:
     enabled: false
 "app/forms/**":
