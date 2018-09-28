@@ -29,6 +29,8 @@
       "Routes": true,
       "axios": true,
       "moment": true,
-      "App": true
+      "App": true,
+      "$": true,
+      "jQuery": true
     }
 }
