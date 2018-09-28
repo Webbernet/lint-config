@@ -22,9 +22,13 @@
       "semi": 2,
       "strict": 2
     },
+    "plugins": [
+      "html-erb"
+    ],
     "globals": {
       "Routes": true,
       "axios": true,
-      "moment": true
+      "moment": true,
+      "App": true
     }
 }
