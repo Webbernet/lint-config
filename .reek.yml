@@ -1,0 +1,21 @@
+directories:
+  "app/controllers/":
+    IrresponsibleModule:
+      enabled: false
+    UnusedPrivateMethod:
+      enabled: false
+    InstanceVariableAssumption:
+      enabled: false
+  "app/facades":
+    IrresponsibleModule:
+      enabled: false
+  "app/forms":
+    IrresponsibleModule:
+      enabled: false
+
+exclude_paths:
+  - 'db'
+  - 'config'
+  - 'spec/'
+  - 'vendor'
+  - 'bin/*'
