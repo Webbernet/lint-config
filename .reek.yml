@@ -6,6 +6,8 @@ directories:
       enabled: false
     InstanceVariableAssumption:
       enabled: false
+    RepeatedConditional:
+      enabled: false
   "app/facades":
     IrresponsibleModule:
       enabled: false
