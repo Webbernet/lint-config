@@ -43,3 +43,5 @@ Rails/HasManyOrHasOneDependent:
   Enabled: false
 Rails/SkipsModelValidations:
   Enabled: false
+EmptyLineAfterGuardClause:
+  Enabled: false
